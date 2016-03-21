@@ -1,0 +1,29 @@
+<form class="navbar-form navbar-right" action="./" method="post" id="logout-form">
+	<div class="dropdown" id="menu-user">
+  		<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Juan Antonio
+  			<span class="caret"></span>
+  		</button>
+  		<ul class="dropdown-menu">
+    		<li><a href="#">Opción 1</a></li>
+    		<li><a href="#">Opcion 2</a></li>
+    		<li><a href="#">Opción 3</a></li>
+    		<li class="divider"></li>
+      		<li><a href="#" id="lnk-logout"><span class="glyphicon glyphicon-log-out"></span>  Logout</a></li>
+  		</ul>
+	</div>
+</form>
+
+--------
+
+<div class="dropdown navbar-form navbar-right" id="menu-user">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Juan Antonio
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Opción 1</a></li> 
+      <li><a href="#">Opcion 2</a></li>
+      <li><a href="#">Opción 3</a></li>
+      <li class="divider"></li>
+        <li><a href="#" id="lnk-logout"><span class="glyphicon glyphicon-log-out"></span>  Logout</a></li>
+    </ul>
+</div>

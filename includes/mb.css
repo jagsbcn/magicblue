@@ -1,0 +1,33 @@
+body {
+  position: relative; 
+}
+
+.seccion {
+  padding-top: 50px;
+  height: 800px;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+#seccion1 {
+  background-image: url('../img/mb_fondo_01.jpg');
+  border-bottom-style: solid;
+  border-bottom-width: 20px;
+}
+
+#seccion2 {
+  background-image: url('../img/mb_fondo_02.jpg');
+  border-bottom-style: solid;
+  border-bottom-width: 20px;
+}
+
+#seccion3 {
+  background-image: url('../img/mb_fondo_03.jpg');
+}
+
+#menu_user {
+  padding-right: 20px;
+  margin-right: 50px;
+}
