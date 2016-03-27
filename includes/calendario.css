@@ -1,0 +1,76 @@
+.dia {
+	height: 115px;
+	width: 125px;
+	margin: 1px;
+	border-width: 1px;
+	border-color: #2E9AFE;
+	border-style: solid;
+	border-radius: 4px;
+}
+
+.dia:hover {
+	border-width: 2px;	
+    border-style: solid;
+    border-radius: 4px;
+    background-color: #CEECF5;
+}
+
+span.dia_num {
+	padding-left: 5px;
+	background-color: #60B0CA;
+	font-weight: bold;
+}
+
+span.dia_num_otro {
+	padding-left: 5px;
+	background-color: #F9D39A;
+	color: #AAAAAA;
+}
+
+span.dia_etiq {
+	text-align: center;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+span {
+	width: 95%;
+	display: block;
+	border-radius: 4px;
+	margin: 2px auto 2px auto;		
+}
+
+.navegacion {
+	font-weight: bold;
+	text-align: center;
+	font-size: 2em;
+	border-width: 1px;
+	border-color: #2E9AFE;
+	border-style: solid;
+	border-radius: 4px;
+	margin-top: 15px;
+	margin-bottom: 5px;
+	margin-right: 1px;
+	margin-left: 1px;
+	background-color: #60B0CA;
+}
+
+i {
+	margin-right: 25px;
+	margin	-left: 25px;
+}
+
+i:hover {
+	color: #CEECF5;
+}
+
+#dv-horas {
+	background-color: yellow;
+	width: 500px;
+	height: 400px;
+	float: right;
+}
+
+
+
+

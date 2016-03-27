@@ -1,5 +1,7 @@
 <?php
 session_start();
+include "includes/calendario.php";
+$calendario = new Calendario();
 ?>
 
 <!DOCTYPE html>
@@ -11,6 +13,7 @@ session_start();
     	<meta name="viewport" content="width=device-width, initial-scale=1">
 
     	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    	<link rel="stylesheet" type="text/css" href="includes/calendario.css">
 
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -19,27 +22,22 @@ session_start();
 
 	<body>
 
-		<?php 
-			$dias_labels = array("Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo");
-			$meses_labels = array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
-
-			$mes_actual = date("n");
-			$anyo_actual = date("Y");
-			
-			$dias_mes_actual = date("t");
-			$semanas_mes_actual = ($dias_mes_actual % 7 == 0 ? 0 : 1) + intval($dias_mes_actual / 7);
-
-			echo $dias_mes_actual." ".$semanas_mes_actual." ".date("N");
-		?>
-
 		<div class="container-fluid">
-  			<div class="row">
-			    <div class="col-md-12">
-			    	Columna principal
-			    </div>
-  			</div>
+			<div class="row">
+				<div id="dv-cal" class="col-md-8">
+					<?php
+						echo $calendario->mostrarCal();
+					?>
+				</div>
+				<div id="dv-hor" class="col-md-4">
+					<?php
+						echo $calendario->mostrarHor();
+					?>
+				</div>
+			</div>
 		</div>
-
 	</body>
+
+	<script src="includes/calendario.js"></script>
 
 </html>
