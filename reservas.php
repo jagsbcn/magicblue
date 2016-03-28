@@ -21,18 +21,17 @@ $calendario = new Calendario();
 
 
 	<body>
-
-		<div class="container-fluid">
-			<div class="row">
-				<div id="dv-cal" class="col-md-8">
+		<div class="container">
+			<?php
+				echo $calendario->mostrarCabCal();
+			?>
+			<div class="row no-padding">
+				<div class="col-md-9">
 					<?php
 						echo $calendario->mostrarCal();
 					?>
 				</div>
-				<div id="dv-hor" class="col-md-4">
-					<?php
-						echo $calendario->mostrarHor();
-					?>
+				<div class="col-md-3">
 				</div>
 			</div>
 		</div>

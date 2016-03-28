@@ -1,0 +1,18 @@
+span.dia_num {
+	padding-left: 5px;
+	background-color: #60B0CA;
+	font-weight: bold;
+}
+
+span.dia_num_otro {
+	padding-left: 5px;
+	background-color: #F9D39A;
+	color: #AAAAAA;
+}
+
+span {
+	width: 95%;
+	display: block;
+	border-radius: 4px;
+	margin: 2px auto 2px auto;		
+}
