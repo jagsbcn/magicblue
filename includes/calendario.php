@@ -122,19 +122,13 @@ class Calendario {
 	public function mostrarCabCal() {
 		$cabecera = '<div class="page-header">';
 
-		$cabecera.= '<div class="pull-right form-inline">';
-
 		$cabecera.= '<div class="btn-group">';
 
-		$cabecera.= '<button class="btn btn-primary"><< Prev</button>';
-		$cabecera.= '<button class="btn btn-default">Hoy</button>';
-		$cabecera.= '<button class="btn btn-primary">Sig >></button>';
+		$cabecera.= '<button id="btn-prev" class="btn btn-default"><i id="glyph-prev" class="glyphicon glyphicon-arrow-left"></i>'.$this->meses_etiq[($this->mes_anterior-1)].' '.$this->anyo_mes_anterior.'</button>';
+		$cabecera.= '<button class="btn btn-primary">'.$this->meses_etiq[($this->mes_actual-1)].' '.$this->anyo_mes_actual.'</button>';
+		$cabecera.= '<button id="btn-sig" class="btn btn-default">'.$this->meses_etiq[($this->mes_siguiente-1)].' '.$this->anyo_mes_siguiente.'<i id="glyph-sig" class="glyphicon glyphicon-arrow-right"></i></button>';
 
 		$cabecera.= '</div>';  //btn-group
-
-		$cabecera.= '</div>';  //pull-right form-inline
-
-		$cabecera.= '<h3>'.$this->meses_etiq[($this->mes_actual-1)].' '.$this->anyo_mes_actual.'</h3>';
 
 		$cabecera.= '</div>';  //page-header
 

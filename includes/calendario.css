@@ -47,6 +47,18 @@ span {
 	margin: 2px auto 2px auto;		
 }
 
-h3 {
-	line-height: 40px;
+i#glyph-prev {
+	padding-right: 15px;
+}
+
+i#glyph-sig {
+	padding-left: 15px;
+}
+
+.btn {
+	font-size: 1.4em;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
